@@ -1,11 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import Navigation from './components/navigation/navigation'
 
 function App() {
   return (
     <div>  
-    {/*<Navigation />
-    <Logo />
+    <Navigation />
+    {/*<Logo />
     Rank
     ImageLinkForm
        FaceRecognition*/}
