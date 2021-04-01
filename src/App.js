@@ -5,7 +5,8 @@ function App() {
   return (
     <div>  
     <Navigation />
-    {/*<Logo />
+    <Logo />
+    {/*
     Rank
     ImageLinkForm
        FaceRecognition*/}
