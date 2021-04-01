@@ -1,5 +1,4 @@
 import './App.css';
-import tachyons from 'tachyons'
 import Navigation from './components/navigation/navigation'
 
 function App() {
