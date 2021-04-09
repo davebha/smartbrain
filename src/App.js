@@ -7,16 +7,16 @@ import Rank from './components/Rank/Rank'
 import Particles from 'react-particles-js'
 
   const particlesOptions={
-                particles: {
-                  line_linked: {
-                    shadow: {
-                      enable: true,
-                      color: "#3CA9D1",
-                      blur: 5
-                    }
-                  }
-                }
-              }
+ particles: {
+        number:{
+        value:30,
+        density:{
+        enable:true,
+        value_area:800
+      }
+    }              
+  }
+}
 
 class App extends Component{
 
