@@ -41,6 +41,17 @@ class App extends Component{
      const height=Number(image.height);
       console.log(width,height);
 
+      return {
+            leftCol:clarifaiFace.left_col*width,
+            rightCol:width-(clarifaiFace.right_col*width),
+            topRow:clarifaiFace.top_row*height,
+            bottomRow:height-(clarifaiFace.bottom_row*height)
+      }  
+  }
+
+  displayFaceBox=(box)=>{
+    this.setState({box})
+    console.log(box)
   }
   onInputChange=(event)=>{
     this.setState({input: event.target.value})
@@ -50,7 +61,7 @@ class App extends Component{
     this.setState({imageUrl:this.state.input})
     app.models.predict(Clarifai.FACE_DETECT_MODEL,
       this.state.input)
-    .then(response=>this.calculateFaceLocation(response))
+    .then(response=>this.displayFaceBox(this.calculateFaceLocation(response)))
     .catch(err=>console.log(err));
   }
 
