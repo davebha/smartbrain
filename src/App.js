@@ -61,8 +61,8 @@ class App extends Component{
     this.setState({input: event.target.value})
   }
 
-  onRouteChange=()=>{
-    this.setState({route:'home'})
+  onRouteChange=(route)=>{
+    this.setState({route:route})
   }
   onButtonSubmit = ()=>{
     this.setState({imageUrl:this.state.input})
@@ -77,7 +77,7 @@ class App extends Component{
     <div className='App'>  
       <Particles 
                 params={particlesOptions} className='particles' />
-      <Navigation />
+      <Navigation onRouteChange={this.onRouteChange}/>
      
 
       {(this.state.route==='signin')? 
