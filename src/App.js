@@ -1,9 +1,9 @@
 import './App.css';
 import React,{Component} from 'react'
-import Navigation from './components/navigation/navigation'
+import Navigation from './components/Navigation/Navigation'
 import SignIn from './components/SignIn/SignIn'
 import Register from './components/Register/Register'
-import Logo from './components/logo/logo'
+import Logo from './components/Logo/Logo'
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm'
 import Rank from './components/Rank/Rank'
 import Particles from 'react-particles-js'
@@ -55,7 +55,6 @@ class App extends Component{
 
   displayFaceBox=(box)=>{
     this.setState({box})
-    console.log(box)
   }
 
 
